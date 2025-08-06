@@ -1,0 +1,49 @@
+[
+  {
+    "subdomain": "subdomain-takeover.bughuntingtakeover.infinityfreeapp.com",
+    "cname": "notexist.github.io",
+    "service": "Github",
+    "confidence": "95%",
+    "risk_level": "CRITICAL",
+    "takeover_difficulty": "Easy",
+    "reasons": [
+      "HTTP 404 response → +20%",
+      "Service identified: Github → +20%",
+      "Service status: Edge Case → +20%",
+      "Fingerprint matched in content → +19%",
+      "Found in takeover database (Easy difficulty) → +25%",
+      "Easy takeover difficulty → +50%",
+      "High success rate (85%) → +35%",
+      "Community verified → +30%",
+      "GitHub repository validation → +40%"
+    ],
+    "evidence_sources": {
+      "can_i_takeover_xyz": {
+        "matched": true,
+        "confidence": 199
+      },
+      "technical_validation": {
+        "matched": true,
+        "confidence": 20
+      },
+      "dns_analysis": {
+        "matched": false,
+        "confidence": 0
+      },
+      "api_validation": {
+        "matched": true,
+        "confidence": 40,
+        "details": "Repository existence validated"
+      },
+      "false_positive_checks": {
+        "matched": false,
+        "confidence": 0
+      }
+    },
+    "false_positive_likelihood": "LOW",
+    "business_impact": "LOW",
+    "remediation": "Remove CNAME record pointing to notexist.github.io or create legitimate Github resource",
+    "verification_timestamp": "2025-08-06T19:54:37+03:00",
+    "requires_manual_review": false
+  }
+]
